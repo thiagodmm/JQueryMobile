@@ -1,0 +1,13 @@
+.topo {
+    padding: 12px;
+}
+
+.rodape {
+    padding: 24px;
+    text-align: center;
+}
+
+.btEnviar {
+    color: white!important;
+    background-color: chocolate!important;
+}

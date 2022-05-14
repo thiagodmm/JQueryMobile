@@ -4,21 +4,26 @@
         <title>Aula 01 - JQuery Mobile</title>
         <meta name="author" content="Thiago de Moura Machado" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <link rel="stylesheet" href="./themes/tema1.min.css" />
+        <link rel="stylesheet" href="./themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="estilo.css" />
+   
     </head>
     <body>
+
         <div data-role="page">
-            <div data-role="header" data-theme="b">
+            <div data-role="header" data-theme="a" class="topo">
                 <h1>Aula 01 - JQuery Mobile</h1>
             </div>
             <div role="main" class="ui-content">
                 <h2>Trabalhando com JQuery Mobile</h1>
 
                     <h3>Selecione o sabor do pastel</h3>
-                    <ul data-role="listview" data-inset="true" data-filter="true">
+                    <ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
                         <li><a href="#">Carne</a></li>
                         <li><a href="#">Queijo</a></li>
                         <li><a href="#">Frango</a></li>
@@ -32,8 +37,8 @@
                 <h3>Fale Conosco</h3>
                 <form>
 
-                    <label for="slider-0">Quantidade de Pimenta:</label>
-                    <input type="range" name="slider" id="slider-0" value="25" min="0" max="100" />
+                    <label for="slider-0" data-theme="c">Quantidade de Pimenta:</label>
+                    <input type="range" name="slider" id="slider-0" value="25" min="0" max="100" data-theme="a" />
 
                     <br>
 
@@ -42,7 +47,7 @@
 
                 </form>
             </div>
-            <div data-role="footer" data-theme="b">
+            <div data-role="footer" data-theme="a" class="rodape">
                 <span><small>&copy; Todos os direitos reservados | Thiago Machado 2022</small></span>
             </div>
         </div>
