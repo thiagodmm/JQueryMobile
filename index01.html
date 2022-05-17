@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
     <head>
         <title>Aula 01 - JQuery Mobile</title>
+        <meta charset="utf-8" />
         <meta name="author" content="Thiago de Moura Machado" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,6 +23,9 @@
             <div role="main" class="ui-content">
                 <h2>Trabalhando com JQuery Mobile</h1>
 
+                    <a href="#pg2" class="ui-btn ui-shadow ui-corner-all">Link para página 2</a>
+                    <a href="#modal" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transiton="pop">Abre Pop-up/Modal</a>
+
                     <h3>Selecione o sabor do pastel</h3>
                     <ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
                         <li><a href="#">Carne</a></li>
@@ -39,11 +43,8 @@
 
                     <label for="slider-0" data-theme="c">Quantidade de Pimenta:</label>
                     <input type="range" name="slider" id="slider-0" value="25" min="0" max="100" data-theme="a" />
-
                     <br>
-
                     <a href="#" data-role="button" data-icon="check" data-theme="a">ENVIAR</a>
-
 
                 </form>
             </div>
@@ -52,15 +53,40 @@
             </div>
         </div>
 
+        <!-- Início da Página 2 -->
+
         <div data-role="page" data-theme="b" id="pg2">
-            <div data-role="header">
-                <h1>Página 2 - Teste Multipages em Single-Page</h1>
+
+            <div data-role="header" data-theme="b" class="topo">
+                <h1>Página 2 - JQuery Mobile</h1>
             </div>
+
             <div role="main" class="ui-content" data-theme="b">
-                
+                <h2>Lorem ipsum página 2</h2>
+                <a href="#pg1" class="ui-btn ui-shadow ui-corner-all">Link para página inicial</a>
+                <p data-theme="b"><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
             </div>
+            <div data-role="footer" data-theme="b">
+                <h4>Página Id 2</h4>
+            </div>
         </div>
+
+        <!-- Modal -->
+        <div data-role="page" data-theme="c" id="modal">
+        <div data-role="header">
+            <h2>Título do Modal</h2>
+        </div>
+        <div data-role="main" class="ui-content" data-theme="c">
+            <h3>Subtítulo do Modal</h3>
+            <p>Implementando um Modal com <b>JQueryMobile</b>.</p>
+            <a href="#pg1" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-left">Voltar para Página 1</a>
+        </div>
+        <div data-role="footer" data-theme="c">
+            <h4>Rodapé do Modal</h4>
+        </div>
+        </div>
+
 
     </body>
 </html>
