@@ -59,6 +59,7 @@
         <div data-role="panel" id="leftpanel1" data-position="left" data-display="overlay" data-theme="a">
 
             <h3>Menu Panel Esquerda</h3>
+            <a href="#pg3" class="ui-btn ui-shadow ui-corner-all">Link para Formulário</a><br>
             <p>Este Panel é posicionado à esquerda com o "Overlay Display Mode". A marcação do Panel está depois do Header, Content e Footer da Page no código fonte.</p>
             <p>Para fechar, clique fora do Panel, deslize para esquerda ou direita, pressione a tecla ESC, ou utilize o botão abaixo:</p>
             <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Fechar Panel</a>
@@ -70,22 +71,22 @@
 
         <!-- Início da Página 2 -->
 
-        <div data-role="page" data-theme="b" id="pg2">
+        <div data-role="page" data-theme="a" id="pg2">
 
-            <div data-role="header" data-theme="b" class="topo">
+            <div data-role="header" data-theme="a" class="topo">
                 <h1>Página 2 - JQuery Mobile</h1>
             </div>
 
-            <div role="main" class="ui-content" data-theme="b">
+            <div role="main" class="ui-content" data-theme="a">
                 <h2>Lorem ipsum página 2</h2>
 
                 <a href="#leftpanel2" class="ui-btn ui-shadow ui-corner-all">Abrir Menu</a>
-                <a href="#pg1" class="ui-btn ui-shadow ui-corner-all">Link para página inicial</a>
+                <a href="#pg1" class="ui-btn ui-shadow ui-corner-all">Voltar para página inicial</a>
 
                 <p data-theme="b"><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
             </div>
-            <div data-role="footer" data-theme="b">
+            <div data-role="footer" data-theme="a">
                 <h4>Página Id 2</h4>
             </div>
 
@@ -93,6 +94,7 @@
         <div data-role="panel" id="leftpanel2" data-position="left" data-display="overlay" data-theme="a">
 
             <h3>Menu Panel Esquerda</h3>
+            <a href="#pg3" class="ui-btn ui-shadow ui-corner-all">Link para Formulário</a><br>
             <p>Este Panel é posicionado à esquerda com o "Overlay Display Mode". A marcação do Panel está depois do Header, Content e Footer da Page no código fonte.</p>
             <p>Para fechar, clique fora do Panel, deslize para esquerda ou direita, pressione a tecla ESC, ou utilize o botão abaixo:</p>
             <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Fechar Panel</a>
@@ -101,6 +103,126 @@
 
 
         </div>
+
+
+
+                <!-- Início da Página 3 -->
+
+                <div data-role="page" data-theme="a" id="pg3">
+
+                    <div data-role="header" data-theme="a" class="topo">
+                        <h1>Página 3 - Formulário JQuery Mobile</h1>
+                    </div>
+        
+                    <div role="main" class="ui-content" data-theme="a">
+                        <h2>Form de Cadastro</h2>
+        
+                        <a href="#pg1" class="ui-btn ui-shadow ui-corner-all">Voltar para página inicial</a>
+                        <br>
+        
+                        <p data-theme="a"><b>Formulário padrão para cadastro de usuário abaixo.</p>
+
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" name="nome" id="nome" value="">
+                            <br>
+                            <label for="nome">E-mail:</label>
+                            <input type="text" name="nome" id="nome" value="">
+                            <br>
+
+                            <label for="date">Data de nascimento:</label>
+                            <input type="date" name="date" id="date" value="">
+                            <br>
+
+                            <label for="tel">Telefone:</label>
+                            <input type="tel" name="tel" id="tel" value="">
+                            <br>
+
+                            <fieldset data-role="controlgroup">
+                                <legend>Sexo:</legend>
+                                <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+                                <label for="radio-choice-1">Masculino</label>
+                                <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+                                <label for="radio-choice-2">Feminino</label>
+                                <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+                                <label for="radio-choice-3">Prefiro não informar</label>
+                            </fieldset>
+                            <br>
+
+                            <fieldset data-role="controlgroup">
+                                <legend>Selecione os turnos desejados:</legend>
+                                <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+                                <label for="checkbox-1a">Manhã</label>
+                                <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+                                <label for="checkbox-2a">Tarde</label>
+                                <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+                                <label for="checkbox-3a">Noite</label>
+                                <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+                                <label for="checkbox-4a">Madrugada</label>
+                            </fieldset>
+                            <br>
+
+                                <label for="slider2">Deseja receber as atualizações por e-mail?</label>
+                                <select name="slider2" id="slider2" data-role="slider">
+                                    <option value="off">Não</option>
+                                    <option value="on">Sim</option>
+                                </select>
+                                <br>
+                                <br>
+
+                                <label for="select-choice-1" class="select">Selecione a preferência alimentar:</label>
+                                <select name="select-choice-1" id="select-choice-1">
+                                <option value="standard">Carnívoro</option>
+                                <option value="rush">Vegetariano</option>
+                                <option value="express">Vegano</option>
+                                </select>
+                                <br>
+
+                                <label for="textarea">Comentários:</label>
+                                <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                                <br>
+
+                                <label for="password">Senha:</label>
+                                <input type="password" name="password" id="password" value="" autocomplete="off">
+                                <br>
+
+                                <label for="password">Repetir a Senha:</label>
+                                <input type="password" name="password" id="password" value="" autocomplete="off">
+
+
+                                <!--
+                                <a href="#" class="ui-shadow ui-btn ui-corner-all">Enviar Cadastro</a>
+                                <button class="ui-shadow ui-btn ui-corner-all">Button element</button>
+                                -->
+                                <br>
+                                <input type="button" value="Enviar Cadastro" data-icon="delete" data-theme="a">
+
+        
+                    </div>
+                    <div data-role="footer" data-theme="a">
+                        <h4>Página Id 3 - Formulário de Cadastro</h4>
+                    </div>
+        
+                <!-- leftpanel2  -->
+                <div data-role="panel" id="leftpanel3" data-position="left" data-display="overlay" data-theme="a">
+        
+                    <h3>Menu Panel Esquerda</h3>
+                    <a href="#pg3" class="ui-btn ui-shadow ui-corner-all">Link para Formulário</a><br>
+                    <p>Este Panel é posicionado à esquerda com o "Overlay Display Mode". A marcação do Panel está depois do Header, Content e Footer da Page no código fonte.</p>
+                    <p>Para fechar, clique fora do Panel, deslize para esquerda ou direita, pressione a tecla ESC, ou utilize o botão abaixo:</p>
+                    <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Fechar Panel</a>
+        
+                </div><!-- /leftpanel2 -->
+        
+        
+                </div>
+
+
+
+
+
+
+
+
 
         <!-- Modal -->
         <div data-role="page" data-theme="c" id="modal">
